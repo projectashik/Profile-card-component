@@ -1,0 +1,113 @@
+:root {
+    --primary-cyan: hsl(185, 75%, 39%);
+    --primary-blue: hsl(229, 23%, 23%);
+    --primary-g-blue: hsl(227, 10%, 46%);
+    --neutral: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Kumbh Sans";
+}
+
+body {
+    background-color: var(--primary-cyan);
+    background-image: url("./images/bg-pattern-top.svg"),
+        url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: right calc(50vw + 15%) bottom calc(50vh - 10vw),
+        left calc(40vw + 25%) top calc(70vh - 10vw);
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 330px;
+}
+
+.card-header {
+    background: url("./images/bg-pattern-card.svg");
+    height: 132px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+}
+
+.img-box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, -50%);
+    padding: 4px;
+    background: white;
+    border-radius: 50%;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding-top: 76px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-right: 5px;
+}
+
+.age {
+    color: var(--neutral);
+}
+
+.address {
+    text-align: center;
+    font-size: 16px;
+    color: var(--neutral);
+    margin: 15px 0;
+}
+
+.data {
+    border-top: 1px solid var(--neutral);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.data div {
+    text-align: center;
+}
+
+.data p {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.data span {
+    color: var(--neutral);
+    font-size: 14px;
+}
